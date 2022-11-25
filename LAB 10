@@ -1,0 +1,16 @@
+
+import random
+
+def fermat(p):#function starts
+   
+    a = random.randint(1, p-1) #  a can have random number from 1 to p-1
+    if(pow(a, p-1)%p != 1):
+        return False
+    return True  #else condition
+x= int(input("enter the number  for check wheather it is prime or not ") )
+z=fermat(x)      
+if z == True:
+    print("{} is a prime ".format(x))
+elif z==False:
+    print("{} is not prime".format(x))
+
